@@ -4,6 +4,8 @@ body {
 	font-family: 'Noto Sans','Helvetica', sans-serif;
 	font-size: 1rem;
 	background-color: #FFF;
+	max-height: 100vh;
+	width: 100vw;
 }
 
 section {
@@ -13,20 +15,27 @@ section {
 	flex-direction: column;
 }
 
+/* header */
 .sitename {
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row nowrap;
 }
 
-.coder {
+.highlight {
+	color: #0cbc00;
+	font-size: 2rem;
+}
+
+/* languages section */
+.codeheader {
 	text-align: center;
 	padding: 1vh 2vw 1vh 2vw;
 }
 
 .symbol{
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -35,4 +44,81 @@ section {
 	max-width: 120px;
 	max-height: 120px;
 	padding: 1vh 2vw;
+}
+
+/* social media section */
+.socialmedia{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials {
+	padding: 0 1vw 0 1vw;
+}
+
+.socialheader {
+	display: block;
+	text-align: center;
+	padding: 1vh 2vw 1vh 2vw;
+}
+
+/* contact me link */
+
+.contactlink {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/*
+.sfooter {
+	max-height: 10vh;
+	width: 100vw;
+	background-color: #000;
+	font-color: #FFF;
+}
+*/
+
+/* media queries! */
+@media screen and (max-width: 600px) and (orientation:portrait) {
+
+	section {
+		height: 30vh;
+		width: 92vw;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		height: 66vh;
+		width: 92vw;
+	}
+
+	.symbol {
+		flex-flow: row wrap;
+	}
+
+	.logos{
+		width: 96px;
+		height: 96px;
+		padding: 1vh 2vw 1vh 2vw;
+	}
+
+	.socialheader, .codeheader {
+		text-align: left;
+	}
+
+	.socialmedia{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
 }
