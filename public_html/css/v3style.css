@@ -25,10 +25,32 @@ body {
 	justify-content: space-evenly;
 }
 
+/*
 h1 {
 	color: #981cff;
 	padding-left: 2vw;
 	font-size: 3rem;
+}
+*/
+
+/* fancy font for header */
+.depthfont {
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: #94D0FF;
+	-webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+	transform: skew(-5deg, -5deg) rotate(5deg);
+	transform-origin: center center;
+	text-shadow: 1px 1px #CE72E5,
+					 2px 2px #CE72E5,
+				    3px 3px #CE72E5,
+				    4px 4px #CE72E5,
+				    5px 5px #CE72E5,
+					 6px 6px #CE72E5,
+					 7px 7px #CE72E5,
+					 8px 8px #FF6AD5,
+					 9px 9px #FF6AD5,
+					 10px 10px #FF6AD5;
 }
 
 h2 {
