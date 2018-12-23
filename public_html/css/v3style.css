@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.box {
+	min-height: 150px;
+}
+
