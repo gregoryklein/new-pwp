@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
+/*
 img, embed, object, video {
 	max-width: 100%;
 }
+*/
 
-html, body {
+html {
 	margin: 0;
 	padding: 0;
 	width: 100vw;
@@ -39,7 +41,7 @@ h1 {
 
 /* fancy font for header */
 .depthfont {
-	font-size: 6vw;
+	font-size: 8vh;
 	padding-left: 3vw;
 	padding-bottom: 4vh;
 	text-transform: uppercase;
@@ -84,27 +86,29 @@ h1 {
 /* square backgrounds for logos
 .squarebg {
 	background: #fff;
-	width: 48px;
-	height: 48px;
+	width: 72px;
+	height: 72px;
+
 	border-radius: 25%;
 	text-align: center;
 	line-height: 84px;
 	vertical-align: middle;
 	padding: 30px;
-}
-*/
+	}
+	*/
+
+
 
 h2 {
 	font-size: 2rem;
-	text-align: left;
-	padding: 2vh 6vw;
+	padding: 2vh 4vw;
 }
 
 /* languages section */
 
 .langicons {
-	max-height: 72px;
-	max-width: 72px;
+	height: 72px;
+	width: 72px;
 	padding: 4vh 4vw;
 }
 
@@ -139,20 +143,25 @@ h2 {
 }
 /* media queries */
 
-@media (min-width: 800px) and (orientation: landscape) {
+@media (min-width: 600px) and (orientation: landscape) {
 	.depthfont {
 
 	}
 
+	h2 {
+		font-size: 1.2rem;
+	}
+
+
 	.langicons, .socials {
-		max-width: 192px;
-		max-height: 192px;
+		max-width: 144vw;
+		max-height: 144px;
 	}
 }
 
 @media (max-width: 450px) {
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.contactlink {
