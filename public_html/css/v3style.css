@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
-/*
-img, embed, object, video {
-	max-width: 100%;
-}
-*/
-
 html {
 	margin: 0;
 	padding: 0;
@@ -16,23 +10,12 @@ html {
 	background: linear-gradient(90deg, rgba(148,208,255,1) 0%, rgba(135,149,232,1) 25%, rgba(173,140,255,1) 50%, rgba(206,114,229,1) 75%, rgba(255,106,213,1) 100%);
 }
 
-
-
-
 .box {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	padding: 4vh 0;
 }
-
-/*
-h1 {
-	color: #981cff;
-	padding-left: 2vw;
-	font-size: 3rem;
-}
-*/
 
 .headername {
 	height: 20vh;
@@ -68,12 +51,6 @@ h1 {
 	transform: rotate(-16deg);
 }
 
-/*
-.fliprotated {
-	transform: rotate(16deg);
-}
-*/
-
 .title {
 	background-color: #fff;
 	color: #8795E8;
@@ -82,22 +59,6 @@ h1 {
 	justify-content: flex-end;
 	width: 100vw;
 }
-
-/* square backgrounds for logos
-.squarebg {
-	background: #fff;
-	width: 72px;
-	height: 72px;
-
-	border-radius: 25%;
-	text-align: center;
-	line-height: 84px;
-	vertical-align: middle;
-	padding: 30px;
-	}
-	*/
-
-
 
 h2 {
 	font-size: 2rem;
@@ -114,8 +75,8 @@ h2 {
 
 /* social media section */
 .socials {
-	max-height: 100px;
-	max-width: 100px;
+	height: 84px;
+	width: 84px;
 	padding: 4vh 4vw;
 }
 
@@ -126,6 +87,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	font-weight: bold;
+	margin-top: 6vh;
 	padding: 4vh 8vw;
 	color: #FF6AD5;
 	background-color: #fff;
@@ -143,23 +105,32 @@ h2 {
 }
 /* media queries */
 
-@media (min-width: 600px) and (orientation: landscape) {
+/* for phones in portrait mode) */
+@media (max-width: 420px) and (orientation: portrait) {
 	.depthfont {
-
+		font-size: 6vh;
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
+	}
+
+	.langicons {
+		width: 84px;
+		height: 84px;
+		padding: 2vh 2vw;
+	}
+
+	.socials {
+		width: 60px;
+		height: 60px;
+		padding: 2vh 2vw;
 	}
 
 
-	.langicons, .socials {
-		max-width: 144vw;
-		max-height: 144px;
-	}
-}
+} /*end of phone portrait media query*/
 
-@media (max-width: 450px) {
+@media (min-width: 421px) {
 	h2 {
 		font-size: 1rem;
 	}
